@@ -16,8 +16,4 @@ with st.echo(code_location='below'):
         query_engine = index.as_query_engine()
         response = query_engine.query(zask)
         return response
-    iface = gr.Interface(fn=chatbot,
-            inputs=gr.components.Textbox(lines=7, label="Input Text"),
-            outputs=gr.components.Textbox(lines=7, label="Output Text"),
-            title="Chatbot regarding Florida Sales & Use Tax Statutes and Codes")
-    iface.launch(share=True)
+    chatbot()
