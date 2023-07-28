@@ -1,3 +1,2 @@
 streamlit
 llama_index
-gradio
